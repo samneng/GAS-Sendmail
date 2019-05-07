@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GAS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .error{
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form id="gas-form" actions="#" method="post" class="mb-3">
+        <div class="row">
+            <div class="col-10 offset-1 col-md-8 offset-md-2">
+                <h3 class="text-center mt-5">Contact</h3>
+                <p class="my-4 text-center" id="form-msg"></p>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="fieldName" id="name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" class="form-control" name="fieldEmail" id="email">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" class="form-control" name="fieldSub" id="subject">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="fieldMessage" class="form-control" cols="30" rows="5" id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary" name="btn-send" id="btn-send">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+<script src="asset/js/main.js"></script>
+</body>
+</html>
