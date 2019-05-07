@@ -21,18 +21,25 @@ $(document).ready(function(){
     });
     $('#btn-send').on('click', function(e){
         e.preventDefault();
-        const url = 'https://script.google.com/macros/s/AKfycbwglT8GxpXDIq1zi9CrQwfZgBitEpWr5qGCmFNE-mmr4Z-01Lo/exec';
+        
+        // Insert google app script
+        const url = 'GOOGLE_APP_SCRIPT_URL';
+        
+        // Get data from html input field
         let getName = $('#name').val(),
             getEmail = $('#email').val(),
             getSub = $('#subject').val(),
             getMsg = $('#message').val();
+        
+        // Get the data and make it as json
         const postRequest = {
             name: getName,
             email: getEmail,
             subject: getSub,
             message: getMsg
         };
-        console.log(postRequest);
+        
+        // Send the postRequest 
         if(url) {
             $.post(url, JSON.stringify(postRequest)).then(res => {
                 $('#form-msg').text(res.msg);
