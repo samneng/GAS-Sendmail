@@ -40,21 +40,3 @@ $(document).ready(function(){
         }
     });
 });
-
-// function sendEmail(e) {
-//     e.preventDefault();
-//     const url = "";
-//     const postRequest = {
-//         name: e.target['fieldName'].value,
-//         email: e.target['fieldEmail'].value,
-//         subject: e.target['fieldSub'].value,
-//         message: e.target['fieldMessage'].value
-//     };
-//     console.log(postRequest);
-//     if(url) {
-//         $.post(url, JSON.stringify(postRequest)).then(res => {
-//             e.target.reset();
-//             alert(res.msg);
-//         });
-//     }
-// }
